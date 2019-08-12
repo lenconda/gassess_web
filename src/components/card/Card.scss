@@ -1,0 +1,42 @@
+.tl-card {
+  .tl-card-header {
+    display: flex;
+    justify-content: space-around;
+    
+    & > h2 {
+      font-size: 1.2em;
+      font-weight: 400;
+      color: #000;
+      flex-grow: 1;
+    }
+  }
+
+  .tl-card-body {
+    padding-left: 0;
+    padding-right: 0;
+
+    & > .item {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+
+      & > .title {
+        word-break: break-all;
+        text-align: left;
+        width: 50%;
+      }
+      
+      & > .data {
+        text-align: right;
+        width: 50%;
+        font-weight: 500;
+
+        @media screen and ( max-width: 767px) {
+          & {
+            text-align: left !important;
+          }
+        }
+      }
+    }
+  }
+}
