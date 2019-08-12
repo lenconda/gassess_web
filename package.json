@@ -13,8 +13,8 @@
     "build:bundle:prod": "cross-env NODE_ENV=production webpack --config src/config/webpack.config.js --mode production",
     "build:server": "cross-env NODE_ENV=production tsc --build tsconfig.json",
     "build": "npm run clean && npm run build:bundle:prod && npm run build:server",
-    "clean:dev": "rm -rf dev",
-    "clean:prod": "rm -rf dist",
+    "clean:dev": "rm -rf dev report",
+    "clean:prod": "rm -rf dist report",
     "clean": "npm run clean:dev && npm run clean:prod",
     "deploy:setup": "pm2 deploy ecosystem.config.js production setup",
     "deploy": "pm2 deploy ecosystem.config.js production"
