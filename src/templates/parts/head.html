@@ -13,13 +13,14 @@
   html, body {
     min-width: 320px;
     height: 100%;
+    overflow-x: hidden;
   }
 
   #root {
     min-height: 100%;
   }
   
-  @media (min-width: 320px) {
+  @media (max-width: 320px) {
     #root {
       overflow-x: auto;
     }

@@ -15,7 +15,7 @@ const App = (): JSX.Element => {
             <Suspense fallback={<div>加载中...</div>}>
               <Router>
                 <div className="zi-switcher">
-                  <NavLink activeClassName="active" to="/student">学生信息管理</NavLink>
+                  <NavLink activeClassName="active" to="/student">学生信息</NavLink>
                   <NavLink activeClassName="active" to="/course">课程信息</NavLink>
                 </div>
                 <Route path="/student" component={StudentManage} />
