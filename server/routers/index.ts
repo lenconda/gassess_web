@@ -13,4 +13,13 @@ indexRouter.get('/', async (ctx, next) => {
   });
 });
 
+indexRouter.get('/grade', async (ctx, next) => {
+  await ctx.render('grade/index.html', {
+    head_title: '成绩管理',
+    active: {
+      grade: true
+    }
+  });
+});
+
 export default indexRouter;

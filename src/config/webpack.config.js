@@ -27,10 +27,14 @@ function getEntries(searchPath, root) {
 module.exports.getEntries = getEntries;
 
 const pages = {
-  // 'create': {
-  //   template: 'index.html',
-  //   title: 'Create | ' + config.name
-  // }
+  'app__root': {
+    template: 'index.html',
+    title: '信息管理 - ' + config.name
+  },
+  'grade': {
+    template: 'index.html',
+    title: '成绩管理 - ' + config.name
+  }
 };
 
 const entries = getEntries(
