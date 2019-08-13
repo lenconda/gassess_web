@@ -1,0 +1,22 @@
+.result-container {
+  margin-top: 3em;
+}
+
+label.custom-file-label {
+  border-radius: .25rem !important;
+
+  &::after {
+    content: '浏览文件' !important;
+    border-radius: .25rem !important;
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+}
+
+.input-group-append {
+  margin-left: 1em;
+}
+
+.result-table {
+  margin-top: 3em;
+}

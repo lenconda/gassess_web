@@ -14,8 +14,10 @@ const App = (): JSX.Element => {
           <div className="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-8">
             <Suspense fallback={<div>加载中...</div>}>
               <Router>
-                <NavLink to="/student">学生信息管理</NavLink>
-                <NavLink to="/course">课程信息</NavLink>
+                <div className="zi-switcher">
+                  <NavLink activeClassName="active" to="/student">学生信息管理</NavLink>
+                  <NavLink activeClassName="active" to="/course">课程信息</NavLink>
+                </div>
                 <Route path="/student" component={StudentManage} />
                 <Route path="/course" component={CourseManage} />
                 <Redirect from="/" to="/student" />
