@@ -8,20 +8,12 @@
 </head>
 
 <body>
-  <header class="container-fluid header">
-    <div class="row d-flex justify-content-center">
-      <div class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-8">
-        <a href="/">
-          <img src="/assets/img/logo.svg" alt="logo" height="32px">
-        </a>
-        <h1>学生课程管理</h1>
-      </div>
-    </div>
-  </header>
+  <%= require('html-loader!./parts/header.html') %>
   <div id="root">
     <%= require('html-loader!./effects/loading.html') %>
   </div>
   <%= require('html-loader!./parts/footer.html') %>
+  <%= require('html-loader!./parts/scripts.html') %>
 </body>
 
 </html>

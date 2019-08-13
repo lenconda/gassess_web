@@ -35,7 +35,7 @@ app.use(async (ctx, next) => {
 app.use(indexRouter.routes()).use(indexRouter.allowedMethods());
 
 (config.isDev && app.use(serve(path.join(__dirname, '../dev/server-bundle'))));
-app.use(serve(path.join(__dirname, (config.isDev ? '../dev/' : '../'), './server-static')));
+app.use(serve(path.join(__dirname, (config.isDev ? '../src' : '../server-static'))));
 
 app.use(kcors());
 

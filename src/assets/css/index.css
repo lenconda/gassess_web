@@ -44,7 +44,7 @@
 }
 
 .header {
-  padding: 2rem 3rem 0;
+  padding: 2rem 0;
   margin-bottom: 4rem;
   border-bottom: 1px solid #efefef;
 }
@@ -125,4 +125,30 @@
   .tl-card .tl-card-body > .item > .data {
     text-align: left !important; 
   } 
+}
+
+.navigation {
+  color: #212529;
+  margin: 0;
+  display: block;
+  width: 100%;
+}
+
+.navigation > .navigation-item {
+  padding: .5em 0;
+  margin: 0 1em;
+  display: inline-block;
+}
+
+.navigation > .navigation-item.active {
+  border-bottom: 2px solid #212529;
+}
+
+.navigation > .navigation-item:first-child {
+  margin-left: 0;
+}
+
+.navigation > .navigation-item::marker,
+.navigation > .navigation-item::before {
+  display: none;
 }

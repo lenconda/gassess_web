@@ -53,7 +53,7 @@ module.exports = {
     ),
     filename: 'static/js/' + (config.isDev ? '[name]-routes.js' : '[name]-routes.[contenthash].js'),
     chunkFilename: 'static/js/' + (config.isDev ? '[name].chunk.js' : '[name].[contenthash].chunk.js'),
-    publicPath: config.isDev ? '/' : '//tracelink-static.lenconda.top'
+    publicPath: config.isDev ? '/' : '//gassess.lenconda.top'
   },
   optimization: {
     splitChunks: {

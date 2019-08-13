@@ -1,0 +1,16 @@
+<header class="container-fluid header pb-0">
+  <div class="row d-flex justify-content-center">
+    <div class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-8">
+      <a href="/">
+        <img src="/assets/img/logo.svg" alt="logo" height="32px">
+      </a>
+      <h1>{{head_title}}</h1>
+      <ul class="navigation">
+        <li class="navigation-item {{#if active.student_course}}active{{/if}}">学生课程管理</li>
+        <li class="navigation-item {{#if active.grade}}active{{/if}}">成绩管理</li>
+        <li class="navigation-item {{#if active.statistic}}active{{/if}}">统计分析</li>
+        <li class="navigation-item {{#if active.export}}active{{/if}}">数据导出</li>
+      </ul>
+    </div>
+  </div>
+</header>
