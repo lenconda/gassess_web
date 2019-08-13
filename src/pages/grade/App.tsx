@@ -8,7 +8,20 @@ const App = (): JSX.Element => {
       <div className="container-fluid px-0">
         <div className="row d-flex justify-content-center">
           <div className="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-8">
-            Grade assessment
+            <div className="zi-select-container small">
+              <select className="zi-select">
+                <option>First option</option>
+                <option>Second option</option>
+              </select>
+              <i className="arrow zi-icon-up"></i>
+            </div>
+            <div className="zi-select-container small ml-2">
+              <select className="zi-select">
+                <option>First option</option>
+                <option>Second option</option>
+              </select>
+              <i className="arrow zi-icon-up"></i>
+            </div>
           </div>
         </div>
       </div>

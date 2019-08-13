@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './style.scss';
 import Button from '../../components/button/Button';
 import { FileReaderEvent } from '../../utils/reader';
 import http from '../../utils/http';
