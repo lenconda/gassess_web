@@ -64,10 +64,6 @@
  }
 }
 
-* {
-  transition: none;
-}
-
 .bundle-loading {
   position: fixed;
   top: 0;
