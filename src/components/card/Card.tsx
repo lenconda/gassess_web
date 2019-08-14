@@ -17,6 +17,7 @@ interface RecordCardProps {
   extra?: React.ReactNode;
   data?: any;
   className?: string;
+  children?: React.ReactNode;
 }
 
 const RecordCard = ({
@@ -47,7 +48,7 @@ const RecordCard = ({
             }
             <div className="container-fluid tl-card-body">
               {
-                schema && schema.map((value, index) => {
+                schema ? schema.map((value, index) => {
                   return (
                     (data[value.key] || value.render) && (
                       <div className="row item" key={index}>
@@ -62,7 +63,7 @@ const RecordCard = ({
                       </div>
                     )
                   );
-                })
+                }) : props.children
               }
             </div>
             {

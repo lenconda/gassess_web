@@ -139,7 +139,7 @@ const StudentManage = (): JSX.Element => {
         }
       </div>
 
-      <div className="result-table">
+      <div className="result-table mb-3">
         <Content loading={fetchStudentInformationLoading}>
           <table className="zi-table">
             <thead>
