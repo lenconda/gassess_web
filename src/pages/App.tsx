@@ -1,7 +1,6 @@
 import React, { Suspense } from 'react';
 import { ToastContainer } from 'react-toastify';
 import { HashRouter as Router, Route, NavLink, Redirect } from 'react-router-dom';
-import './App.scss';
 
 const StudentManage = React.lazy(() => import('../routes/root/StudentManage'));
 const CourseManage = React.lazy(() => import('../routes/root/CourseManage'));

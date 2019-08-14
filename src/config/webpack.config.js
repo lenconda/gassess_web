@@ -34,6 +34,10 @@ const pages = {
   'grade': {
     template: 'index.html',
     title: '成绩管理 - ' + config.name
+  },
+  'assess': {
+    template: 'index.html',
+    title: '统计分析 - ' + config.name
   }
 };
 

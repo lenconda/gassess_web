@@ -213,8 +213,16 @@ const GradeManage = (): JSX.Element => {
                               <td>{value.courseName} ({value.courseId})</td>
                               <td>{new Date(value.createTime).toLocaleString()}</td>
                               <td>
-                                <Button className="mr-1 mb-1" type="primary" size="mini" width="auto" data-toggle="modal" data-target="#detail-modal">
-                                  <i className="fa fa-eye"></i>&nbsp;查看
+                                <Button
+                                  onClick={() => window.location.replace(`/assess/#/${value.uuid}`)}
+                                  className="mr-1 mb-1"
+                                  type="primary"
+                                  size="mini"
+                                  width="auto"
+                                  data-toggle="modal"
+                                  data-target="#detail-modal"
+                                >
+                                  <i className="fa fa-bar-chart"></i>&nbsp;分析
                                 </Button>
                                 <Button type="danger" size="mini" width="auto" onClick={() => handleDeleteSelectedGrades(value.uuid)}>
                                   <i className="fa fa-trash"></i>&nbsp;删除
@@ -228,25 +236,6 @@ const GradeManage = (): JSX.Element => {
                   </table>
                 </Content>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="modal fade" id="detail-modal" tabIndex={-1} role="dialog" aria-labelledby="modal" aria-hidden="true">
-        <div className="modal-dialog modal-lg" role="document">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h5 className="modal-title" id="exampleModalLabel">查看成绩</h5>
-              <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div className="modal-body">
-
-            </div>
-            <div className="modal-footer">
-              <Button type="primary" width="auto" data-dismiss="modal">关闭</Button>
             </div>
           </div>
         </div>

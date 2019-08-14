@@ -22,4 +22,12 @@ indexRouter.get('/grade', async (ctx, next) => {
   });
 });
 
+indexRouter.get('/assess', async (ctx, next) => {
+  await ctx.render('assess/index.html', {
+    active: {
+      statistic: true
+    }
+  });
+});
+
 export default indexRouter;
