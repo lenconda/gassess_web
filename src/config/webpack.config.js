@@ -38,6 +38,10 @@ const pages = {
   'assess': {
     template: 'index.html',
     title: '统计分析 - ' + config.name
+  },
+  'export': {
+    template: 'index.html',
+    title: '数据导出 - ' + config.name
   }
 };
 

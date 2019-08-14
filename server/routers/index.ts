@@ -31,4 +31,13 @@ indexRouter.get('/assess', async (ctx, next) => {
   });
 });
 
+indexRouter.get('/export', async (ctx, next) => {
+  await ctx.render('export/index.html', {
+    head_title: '数据导出',
+    active: {
+      export: true
+    }
+  });
+});
+
 export default indexRouter;
