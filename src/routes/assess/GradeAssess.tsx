@@ -105,9 +105,9 @@ const GradeAssess = (props: GradeAssessProps): JSX.Element => {
   }, []);
 
   useEffect(() => {
-    fetchDetailedGradeStatics();
-    fetchGradeRankList();
-    fetchGradePiechartData();
+    uuid && fetchDetailedGradeStatics();
+    uuid && fetchGradeRankList();
+    uuid && fetchGradePiechartData();
     // eslint-disable-nextline
   }, [uuid]);
 
