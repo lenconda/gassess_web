@@ -24,6 +24,7 @@ indexRouter.get('/grade', async (ctx, next) => {
 
 indexRouter.get('/assess', async (ctx, next) => {
   await ctx.render('assess/index.html', {
+    head_title: '统计分析',
     active: {
       statistic: true
     }
