@@ -45,10 +45,8 @@ if (config.isDev) app.use(logger());
 
 const port: number = process.env.PORT ? parseInt(process.env.PORT, 10) : 5000;
 
-process.on('SIGINT', () => {
-  if (config.isDev) {
-    execSync('npm run clean:dev');
-  }
+config.isDev && process.on('SIGINT', () => {
+  execSync('npm run clean:dev');
 });
 
 app.listen(port);

@@ -181,8 +181,6 @@ module.exports = {
   ]
 };
 
-process.on('SIGINT', () => {
-  if (config.isDev) {
-    execSync('npm run clean:dev');
-  }
+config.isDev && process.on('SIGINT', () => {
+  execSync('npm run clean:dev');
 });
