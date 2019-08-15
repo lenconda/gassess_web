@@ -19,8 +19,8 @@ module.exports = {
 
   deploy: {
     production: {
-      user: 'root',
-      host: '101.132.184.52',
+      user: 'web',
+      host: '149.129.56.110',
       ref: 'origin/master',
       repo: 'git@github.com:lenconda/gassess_web.git',
       path: '/root/space/gassess_web',
