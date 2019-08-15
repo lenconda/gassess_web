@@ -180,7 +180,3 @@ module.exports = {
     }),
   ]
 };
-
-config.isDev && process.on('SIGINT', () => {
-  execSync('npm run clean:dev');
-});
