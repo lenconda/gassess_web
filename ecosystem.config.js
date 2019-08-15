@@ -19,11 +19,11 @@ module.exports = {
 
   deploy: {
     production: {
-      user: 'web',
+      user: 'root',
       host: '101.132.184.52',
       ref: 'origin/master',
       repo: 'git@github.com:lenconda/gassess_web.git',
-      path: '/home/web/space/gassess_web',
+      path: '/root/space/gassess_web',
       'post-deploy': 'npm i && npm run clean && npm run build && pm2 reload ecosystem.config.js --env production'
     }
   }
