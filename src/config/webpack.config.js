@@ -166,16 +166,6 @@ module.exports = {
       }
     ]),
     new CleanWebpackPlugin(),
-    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
-    new BundleAnalyzerPlugin({
-      analyzerMode: 'static',
-      reportFilename: '../../report/report.html',
-      defaultSizes: 'parsed',
-      openAnalyzer: false,
-      generateStatsFile: true,
-      statsFilename: '../../report/stats.json',
-      statsOptions: null,
-      logLevel: 'info'
-    }),
+    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/)
   ]
 };
