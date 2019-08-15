@@ -43,7 +43,7 @@ app.use(bodyParser());
 
 if (config.isDev) app.use(logger());
 
-const port: number = process.env.PORT ? parseInt(process.env.PORT, 10) : 5000;
+const port: number = process.env.PORT ? parseInt(process.env.PORT, 10) : 3838;
 
 config.isDev && process.on('SIGINT', () => {
   execSync('npm run clean:dev');
