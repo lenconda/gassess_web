@@ -1,6 +1,6 @@
 module.exports = {
   apps: [{
-    name: 'tracelink_web',
+    name: 'gassess_web',
     script: 'dist/server/index.js',
     // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
     // args: 'one two',
@@ -12,7 +12,7 @@ module.exports = {
       NODE_ENV: 'development'
     },
     env_production: {
-      PORT: 9988,
+      PORT: 8333,
       NODE_ENV: 'production'
     }
   }],
@@ -22,8 +22,8 @@ module.exports = {
       user: 'web',
       host: '101.132.184.52',
       ref: 'origin/ssr',
-      repo: 'git@github.com:lenconda/tracelink_web.git',
-      path: '/home/web/space/tracelink_web',
+      repo: 'git@github.com:lenconda/gassess_web.git',
+      path: '/home/web/space/gassess_web',
       'post-deploy': 'npm i && npm run clean && npm run build && pm2 reload ecosystem.config.js --env production'
     }
   }
